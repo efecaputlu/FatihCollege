@@ -201,6 +201,7 @@ h1 {
 }
 
 .navbar__links::after {
+  opacity: 0;
   content: "";
   display: block;
   width: 0;
@@ -211,12 +212,11 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 0.7s ease, width 0.3s ease;
-  justify-content: center;
 }
 
 .navbar__links:hover::after {
   opacity: 1;
-  width: 60px;
+  width: 60%;
 }
 
 /* Enroll Page Styles */
@@ -427,7 +427,90 @@ h4[class="home"] {
   color: white;
 }
 
+/* Style for the team-members section */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Display 2 members in each row */
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Style for individual team members */
+.team-member {
+  text-align: center;
+}
+
+.member-image {
+  width: 150px;
+  height: 150px;
+  object-fit: fill;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+h1[class="team"]{
+  margin-top: 20px;
+}
+h1[class="team"]::after{
+  content: "";
+  display: block;
+  width: 180px;
+  height: 6px;
+  background-color: #0caae9;
+  margin: 10px auto;
+  position: center;
+  border-radius: 50%;
+}
+
+h3[class="team"]{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: black;
+}
+h3[class="team"]::after{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #0caae9;
+  margin: 10px auto;
+  position: center;
+}
+
+
+h6 {
+  color: orange;
+  font-size: medium;
+  margin: -10px;
+  margin-bottom: -20px;
+}
+
+l {
+  margin-top: 10px;
+  opacity: 1;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #0caae9;
+}
+
+h1[class = "EnrollTitle"]{
+    content: "";
+    display: block;
+    width: 60%;
+    height: 6px;
+    background-color: #0caae9;
+    margin: 10px auto;
+    position: center;
+    border-radius: 50%;
+    margin-bottom: -17px;
+}
+
 footer{
   text-align: center;
   margin-top: 100px;
 }
+
+
