@@ -14,7 +14,7 @@ function sendContactForm(){
   .then(
     response => {
         console.log(response);
-        alert("Message Sent Successfully")
+        alert("Form Submitted Successfully")
         document.getElementById("firstName").value = "";
         document.getElementById("surname").value = "";
         document.getElementById("email").value = "";
@@ -96,7 +96,7 @@ function sendContactForm(){
   .then(
     response => {
         console.log(response);
-        alert("Message Sent Successfully")
+        alert("Form Submitted Successfully")
         document.getElementById("firstName").value = "";
         document.getElementById("surname").value = "";
         document.getElementById("date_of_birth").value = "";
