@@ -1,0 +1,65 @@
+<head>
+    <title>Contact</title>
+    <!-- Tab Icon -->
+<link rel="icon" type="image/jpeg" href="images/FCIcon.jpeg">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+
+
+<script src="sendForm.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("E-hnSkgn2bdRYkcMD");
+        })();
+        </script>
+
+<!-- Include head.html (navbar) -->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script>
+      $(function() {
+         $("#includeHtml").load("head.html");
+      });
+   </script>
+
+</head>
+  <body>
+    <!-- Navigation Bar -->
+    <div id="includeHtml"></div>
+
+    <main>
+        <h1 class="title">Contact</h1>
+
+        <h3 class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <span>info@fatihcollege.org</span>
+        </h3>
+        <h3>
+            <i class="fas fa-phone"></i>
+            <span>059 300 0622 / 054 858 8593</span>
+        </h3>
+        <form onsubmit="sendContactForm(); reset(); return false;">
+            <h2 class="formTitle1">CONTACT US</h2>
+            
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="surname">Surname *</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">Your Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message * (Max 200 Words): </label>
+            <textarea id="message" name="message" required maxlength="200"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <footer>
+            <p>&copy; 2023 Fatih College. All rights reserved.</p>
+          </footer> 
+        </body> 
+    </main>
